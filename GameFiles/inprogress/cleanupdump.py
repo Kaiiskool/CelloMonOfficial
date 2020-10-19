@@ -1,7 +1,20 @@
-### this code is was writen by morgan lessard ###
-
-### IMPORT'S ###
-import time
-import random
-import sys
-### IMPORT'S ###
+print(
+'''
+########################################
+###|               /____/  \        |###
+###|              /     \  /        |###
+###|     o       /| ___ |\/|        |###
+###|    /|\       | | | | /         |###
+###|    /\        |_|_|_|/          |###
+###|................................|###
+########################################
+### welcome to town G1!              ###
+### what would you like to do?       ###
+########################################
+### type 's' to go to the shop       ###
+### type 'h' to go to you house      ###
+### type 'c' to continue             ###
+### to route 1.0                     ###
+########################################
+'''
+)
