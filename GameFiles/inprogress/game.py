@@ -8,16 +8,17 @@ from classes import boss01
 from classes import item
 
 # intro
-print("#################################")
-print("###   WELCOME TO PLACEHOLDER  ###")
-print("#################################")
-print("### CREATED BY MORGAN LESSARD ###")
-print("###        2019 - 2020        ###")
-print("#################################")
-print("### IF YOU WANT TO PLAY TYPE  ###")
-print("###           'PLAY'          ###")
-print("#################################")
-
+print('''
+#################################
+###   WELCOME TO PLACEHOLDER  ###
+#################################
+### CREATED BY MORGAN LESSARD ###
+###        2019 - 2020        ###
+#################################
+### IF YOU WANT TO PLAY TYPE  ###
+###           'PLAY'          ###
+#################################
+''')
 answer = input().lower().strip()
 print("You will now be sent to town 1!")
 time.sleep(2)
