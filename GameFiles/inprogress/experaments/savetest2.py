@@ -1,5 +1,6 @@
+f = open("classes.py", "a")
+f.write('''
 # code written by kaiiskool
-
 
 
 # player
@@ -44,3 +45,6 @@ player = player()
 boss01 = boss01()
 item = item()
 basic_sword = basic_sword()
+
+''')
+f.close()

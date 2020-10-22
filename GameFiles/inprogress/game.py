@@ -6,18 +6,22 @@ import sys
 from classes import player
 from classes import boss01
 from classes import item
+from classes import basic_sword
 
 # intro
 print('''
-#################################
-###   WELCOME TO PLACEHOLDER  ###
-#################################
-### CREATED BY MORGAN LESSARD ###
-###        2019 - 2020        ###
-#################################
-### IF YOU WANT TO PLAY TYPE  ###
-###           'PLAY'          ###
-#################################
+   ______________________________
+ / \                             \.
+|   |                            |.
+ \_ |   Welcome to Placeholder!  |.
+    |                            |.
+    |    written by kaiiskool    |.
+    |     (press any key to      |.
+    |      continue)             |.
+    |                            |.
+    |   _________________________|___
+    |  /                            /.
+    \_/____________________________/.
 ''')
 answer = input().lower().strip()
 print("You will now be sent to town 1!")
@@ -36,16 +40,16 @@ while player.location == "town":
        |  HP: ''',player.heath,'''                  |                                                  __     //       \\\\                
        |  MANA: ''', player.mana ,'''                |                                                 |=^|   //    _    \\\\               
        |-----------------------------|                                               __|= |__//    (+)    \\\\              
-                                                                                    /LLLLLLL//      ~      \\\\             
-                                                                                   /LLLLLLL//               \\\\            
-                                                                                  /LLLLLLL//                 \\\\           
-                                                                                 /LLLLLLL//  |~[|]~| |~[|]~|  \\\\          
-                                                                                 ^| [|] //   | [|] | | [|] |   \\\\         
-                                                                                  | [|] ^|   |_[|]_| |_[|]_|   |^           
-                                                                               ___|______|                     |            
-                                                                              /LLLLLLLLLL|_____________________|            
-                                                                             /LLLLLLLLLLL/LLLLLLLLLLLLLLLLLLLLLL\           
-                                                                            /LLLLLLLLLLL/LLLLLLLLLLLLLLLLLLLLLLLL\          
+       |-----------------------------|                                              /LLLLLLL//      ~      \\\\             
+       |_____________________________|                                             /LLLLLLL//               \\\\            
+       | Your in town homia!         |                                            /LLLLLLL//                 \\\\           
+       | what would you like to do?  |                                           /LLLLLLL//  |~[|]~| |~[|]~|  \\\\          
+       |----------------------------------|                                      ^| [|] //   | [|] | | [|] |   \\\\         
+       | type "h" to enter your house     |                                       | [|] ^|   |_[|]_| |_[|]_|   |^           
+       | type "m" to enter the hospital   |                                    ___|______|                     |            
+       | type "s" to enter the shop       |                                   /LLLLLLLLLL|_____________________|            
+       | type "c" to travel down the path |                                  /LLLLLLLLLLL/LLLLLLLLLLLLLLLLLLLLLL\           
+       |----------------------------------|                                 /LLLLLLLLLLL/LLLLLLLLLLLLLLLLLLLLLLLL\          
                                                                             ^||^^^^^^^^/LLLLLLLLLLLLLLLLLLLLLLLLLL\         
                                                                              || |~[|]~|^^||^^^^^^^^^^||^|~[|]~|^||^^        
                                                                              || | [|] |  ||  |~~~~|  || | [|] | ||           
@@ -65,7 +69,55 @@ while player.location == "town":
         |____||____|      |   |        |shop|                         /         ______________________________|                                            
             |  | <_>      |   |         \\  /                         |        _|                                                
     ________|  |__|_______|   |_________|  |________________________/       _|                                                     
-    *                                                                     _/                                                     
+        *                                                                 _/                                                     
     _____________________________________________________________________/                                                     
     ''')
     answer = input().lower().strip()
+    if answer == "h":
+        pass
+
+    elif answer == "m":
+        pass
+
+    elif answer == "s":
+        player.location = "shop"
+
+    elif answer == "c":
+        pass
+
+    else:
+        print("thats not a valid option! please try again")
+        time.sleep(1)
+        pass
+
+while player.location == "shop":
+    if player.exp < 25:
+        print(
+            '''
+    
+    
+            ___________________________________________________________________________
+            |  ______________________              _______________________________    |
+            |  | items for sale:    |              |/    _____ _                \|    |
+            |  |  snack = 25g       |              |   / ____| |                 |    | 
+            |  |  heathpack = 50g   |              |  | (___ | |__   ___  _ __   |    |
+            |  |  basic sword = 30g |              |   \___ \| '_ \ / _ \| '_ \  |    |
+            |  ----------------------              |   ____) | | | | (_) | |_) | |    |
+            |  ___________________________         |  |_____/|_| |_|\___/| .__/  |    |
+            |  | you have ''', player.money, ''' gold     |         |                    | |      |    |
+            |  ---------------------------         |\                   |_|     /|    |
+            |  (type "exit" to leave shop)         |_\_________________________/_|    |
+            |_________________________________________________________________________|
+
+
+        ''')
+        answer = input().lower().strip()
+
+        if answer == "snack":
+            pass
+
+        elif answer == "heathpack":
+            pass
+
+        elif answer == "basic sword":
+            pass

@@ -1,5 +1,5 @@
-# code written by kaiiskool
 
+# code written by kaiiskool
 
 
 # player
@@ -44,3 +44,4 @@ player = player()
 boss01 = boss01()
 item = item()
 basic_sword = basic_sword()
+
